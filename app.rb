@@ -15,7 +15,6 @@ class App < Sinatra::Base
     pl = PigLatinizer.new
     @piglatin = pl.piglatinize(params[:user_phrase])
     
-    erb :user_input
   end
 
 end
